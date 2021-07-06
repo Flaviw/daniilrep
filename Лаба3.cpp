@@ -1,6 +1,6 @@
-// Карась Д.Г.
-// ИИС ПИ 2-1
-// Лабораторная работа 3
+// РљР°СЂР°СЃСЊ Р”.Р“.
+// РРРЎ РџР 2-1
+// Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° 3
 
 #include <iostream>
 using namespace std;
@@ -8,21 +8,21 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Rus");
 
-	cout << "Задание 1" << endl;
+	cout << "Р—Р°РґР°РЅРёРµ 1" << endl;
 
 	int N;
-	cout << "Введите размер: ";
+	cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ: ";
 	cin >> N;
 
 	int* arr = new int[N];
 	int count = 0;
 	for (int i = 0; i < N; i++)
 	{
-		cout << "Введите значение для " << i + 1 << " элемента массива: ";
+		cout << "Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ РґР»СЏ " << i + 1 << " СЌР»РµРјРµРЅС‚Р° РјР°СЃСЃРёРІР°: ";
 		cin >> arr[i];
 	}
 
-	cout << "Обновленный массив: ";
+	cout << "РћР±РЅРѕРІР»РµРЅРЅС‹Р№ РјР°СЃСЃРёРІ: ";
 	for (int i = 0; i < N; i++) {
 		if(arr[i]>=0)
 		cout << arr[i] << " ";
@@ -32,10 +32,10 @@ int main() {
 	delete[] arr;
 
 
-	cout << endl << "Задание 2" << endl;
+	cout << endl << "Р—Р°РґР°РЅРёРµ 2" << endl;
 	cout << "----------------------------------" << endl;
 
-	cout << "Ввод строки: ";
+	cout << "Р’РІРѕРґ СЃС‚СЂРѕРєРё: ";
 	string str, str2 = "";
 	cin >> str;
 	string  example = "aeiouyAEIOUY";
@@ -46,7 +46,7 @@ int main() {
 				str2 += str[i];
 
 
-	cout << "Гласные из строки: " << str2 << endl;
+	cout << "Р“Р»Р°СЃРЅС‹Рµ РёР· СЃС‚СЂРѕРєРё: " << str2 << endl;
 
 	return 0;
 }
