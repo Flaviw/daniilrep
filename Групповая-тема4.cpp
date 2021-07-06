@@ -1,11 +1,11 @@
-////// В написании групповой работы принимали участие: /////
-////// Ярославцев В.А.
-/////  Виноградов А.А.
-/////  Алексашин И.Д.
-/////  Акил Амр
-/////  Карась Д.Г.
-/////  Алешин И.
-///// Судаков В.
+////// Р’ РЅР°РїРёСЃР°РЅРёРё РіСЂСѓРїРїРѕРІРѕР№ СЂР°Р±РѕС‚С‹ РїСЂРёРЅРёРјР°Р»Рё СѓС‡Р°СЃС‚РёРµ: /////
+////// РЇСЂРѕСЃР»Р°РІС†РµРІ Р’.Рђ.
+/////  Р’РёРЅРѕРіСЂР°РґРѕРІ Рђ.Рђ.
+/////  РђР»РµРєСЃР°С€РёРЅ Р.Р”.
+/////  РђРєРёР» РђРјСЂ
+/////  РљР°СЂР°СЃСЊ Р”.Р“.
+/////  РђР»РµС€РёРЅ Р.
+///// РЎСѓРґР°РєРѕРІ Р’.
 
 
 
@@ -20,10 +20,10 @@ using namespace std;
 
 class lake {
 private:
-	string name; // название
-	float area; // площадь
-	float deep; // средняя глубина
-	string continent; // континент
+	string name; // РЅР°Р·РІР°РЅРёРµ
+	float area; // РїР»РѕС‰Р°РґСЊ
+	float deep; // СЃСЂРµРґРЅСЏСЏ РіР»СѓР±РёРЅР°
+	string continent; // РєРѕРЅС‚РёРЅРµРЅС‚
 	int local_choice;
 public:
 	lake(string n = "NULL", float a = 0, float d = 0, string c = "NULL") {
@@ -34,22 +34,22 @@ public:
 	}
 
 	void print() {
-		cout << "Название: " << name << endl;
-		cout << "Площадь: " << area << endl;
-		cout << "Средняя глубина: " << deep << endl;
-		cout << "Континент: " << continent << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ: " << name << endl;
+		cout << "РџР»РѕС‰Р°РґСЊ: " << area << endl;
+		cout << "РЎСЂРµРґРЅСЏСЏ РіР»СѓР±РёРЅР°: " << deep << endl;
+		cout << "РљРѕРЅС‚РёРЅРµРЅС‚: " << continent << endl;
 	}
 
 	string getName() { return name; }
 	
 	void addItem() {
-		cout << "Введите название: ";
+		cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ: ";
 		cin >> name;
-		cout << "Введите площадь: ";
+		cout << "Р’РІРµРґРёС‚Рµ РїР»РѕС‰Р°РґСЊ: ";
 		cin >> area;
-		cout << "Введите среднюю глубину: ";
+		cout << "Р’РІРµРґРёС‚Рµ СЃСЂРµРґРЅСЋСЋ РіР»СѓР±РёРЅСѓ: ";
 		cin >> deep;
-		cout << "Введите континент: ";
+		cout << "Р’РІРµРґРёС‚Рµ РєРѕРЅС‚РёРЅРµРЅС‚: ";
 		cin >> continent;
 	}
 	
@@ -58,10 +58,10 @@ public:
 
 class river {
 private:
-	string name; // название
-	float deep; // средняя глубина
-	float length;	// протяженность
-	string continent; // континент
+	string name; // РЅР°Р·РІР°РЅРёРµ
+	float deep; // СЃСЂРµРґРЅСЏСЏ РіР»СѓР±РёРЅР°
+	float length;	// РїСЂРѕС‚СЏР¶РµРЅРЅРѕСЃС‚СЊ
+	string continent; // РєРѕРЅС‚РёРЅРµРЅС‚
 public:
 	river(string n = "NULL", float d = 0, float l = 0, string c = "NULL") {
 		name = n;
@@ -71,29 +71,29 @@ public:
 	}
 	string getName() { return name; }
 	void addItem() {
-		cout << "Введите название: ";
+		cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ: ";
 		cin >> name;
-		cout << "Введите среднюю глубину: ";
+		cout << "Р’РІРµРґРёС‚Рµ СЃСЂРµРґРЅСЋСЋ РіР»СѓР±РёРЅСѓ: ";
 		cin >> deep;
-		cout << "Введите протяженность: ";
+		cout << "Р’РІРµРґРёС‚Рµ РїСЂРѕС‚СЏР¶РµРЅРЅРѕСЃС‚СЊ: ";
 		cin >> length;
-		cout << "Введите континент: ";
+		cout << "Р’РІРµРґРёС‚Рµ РєРѕРЅС‚РёРЅРµРЅС‚: ";
 		cin >> continent;
 	}
 	void print() {
-		cout << "Название: " << name << endl;
-		cout << "Средняя глубина: " << deep << endl;
-		cout << "Протяженность: " << length << endl;
-		cout << "Континент: " << continent << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ: " << name << endl;
+		cout << "РЎСЂРµРґРЅСЏСЏ РіР»СѓР±РёРЅР°: " << deep << endl;
+		cout << "РџСЂРѕС‚СЏР¶РµРЅРЅРѕСЃС‚СЊ: " << length << endl;
+		cout << "РљРѕРЅС‚РёРЅРµРЅС‚: " << continent << endl;
 	}
 };
 
 class waterfall {
 private:
-	string name;// название
-	float height; // высота
-	float width; // ширина
-	string continent; // континент
+	string name;// РЅР°Р·РІР°РЅРёРµ
+	float height; // РІС‹СЃРѕС‚Р°
+	float width; // С€РёСЂРёРЅР°
+	string continent; // РєРѕРЅС‚РёРЅРµРЅС‚
 public:
 	waterfall(string n = "NULL", float h = 0, float w = 0, string c = "NULL") {
 		name = n;
@@ -105,21 +105,21 @@ public:
 	string getName() { return name; }
 
 	void addItem() {
-		cout << "Введите название: ";
+		cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ: ";
 		cin >> name;
-		cout << "Введите высоту: ";
+		cout << "Р’РІРµРґРёС‚Рµ РІС‹СЃРѕС‚Сѓ: ";
 		cin >> height;
-		cout << "Введите ширину: ";
+		cout << "Р’РІРµРґРёС‚Рµ С€РёСЂРёРЅСѓ: ";
 		cin >> width;
-		cout << "Введите континент: ";
+		cout << "Р’РІРµРґРёС‚Рµ РєРѕРЅС‚РёРЅРµРЅС‚: ";
 		cin >> continent;
 	}
 
 	void print() {
-		cout << "Название: " << name << endl;
-		cout << "Высота: " << height << endl;
-		cout << "Ширина: " << width << endl;
-		cout << "Континент: " << continent << endl;
+		cout << "РќР°Р·РІР°РЅРёРµ: " << name << endl;
+		cout << "Р’С‹СЃРѕС‚Р°: " << height << endl;
+		cout << "РЁРёСЂРёРЅР°: " << width << endl;
+		cout << "РљРѕРЅС‚РёРЅРµРЅС‚: " << continent << endl;
 	}
 };
 
@@ -137,36 +137,36 @@ public:
 		start();
 	}
 	void auto_fill() {
-		lake l1("Байкал", 31722, 1000, "Европа");
+		lake l1("Р‘Р°Р№РєР°Р»", 31722, 1000, "Р•РІСЂРѕРїР°");
 		lake_obj.push_back(l1);
-		lake l2("Верхнее", 82414, 350, "Северная Америка");
+		lake l2("Р’РµСЂС…РЅРµРµ", 82414, 350, "РЎРµРІРµСЂРЅР°СЏ РђРјРµСЂРёРєР°");
 		lake_obj.push_back(l2);
-		lake l3("Виктория", 69485, 70, "Африка");
+		lake l3("Р’РёРєС‚РѕСЂРёСЏ", 69485, 70, "РђС„СЂРёРєР°");
 		lake_obj.push_back(l3);
 
-		river r1("Амазонка", 50, 7100, "Южная Америка");
+		river r1("РђРјР°Р·РѕРЅРєР°", 50, 7100, "Р®Р¶РЅР°СЏ РђРјРµСЂРёРєР°");
 		river_obj.push_back(r1);
-		river r2("Нил", 30, 6670, "Африка");
+		river r2("РќРёР»", 30, 6670, "РђС„СЂРёРєР°");
 		river_obj.push_back(r2);
-		river r3("Янцзы", 6300, 45, "Азия");
+		river r3("РЇРЅС†Р·С‹", 6300, 45, "РђР·РёСЏ");
 		river_obj.push_back(r3);
 
-		waterfall w1("Анхель", 979, 107, "Южная Америка");
+		waterfall w1("РђРЅС…РµР»СЊ", 979, 107, "Р®Р¶РЅР°СЏ РђРјРµСЂРёРєР°");
 		waterfall_obj.push_back(w1);
-		waterfall w2("Виктория", 108, 1800, "Африка");
+		waterfall w2("Р’РёРєС‚РѕСЂРёСЏ", 108, 1800, "РђС„СЂРёРєР°");
 		waterfall_obj.push_back(w2);
-		waterfall w3("Ниагарский", 53, 323, "Африка");
+		waterfall w3("РќРёР°РіР°СЂСЃРєРёР№", 53, 323, "РђС„СЂРёРєР°");
 		waterfall_obj.push_back(w3);
 	}
 
 	void start() {
 		system("cls");
 
-		cout << "Выберите необходимый справочник: " << endl;
-		cout << "1. Справочник озер" << endl;
-		cout << "2. Справочник рек" << endl;
-		cout << "3. Справочник водопадов" << endl;
-		cout << endl << "4. Выход из приложения" << endl;
+		cout << "Р’С‹Р±РµСЂРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Р№ СЃРїСЂР°РІРѕС‡РЅРёРє: " << endl;
+		cout << "1. РЎРїСЂР°РІРѕС‡РЅРёРє РѕР·РµСЂ" << endl;
+		cout << "2. РЎРїСЂР°РІРѕС‡РЅРёРє СЂРµРє" << endl;
+		cout << "3. РЎРїСЂР°РІРѕС‡РЅРёРє РІРѕРґРѕРїР°РґРѕРІ" << endl;
+		cout << endl << "4. Р’С‹С…РѕРґ РёР· РїСЂРёР»РѕР¶РµРЅРёСЏ" << endl;
 		cin >> choice;
 		if (choice == 4)
 			exit(0);
@@ -180,12 +180,12 @@ public:
 		cout << endl;
 		if (choice) {
 			int choice2;
-			cout << "Выберите необходимое действие: " << endl;
-			cout << "1. Показать все записи" << endl;
-			cout << "2. Поиск записи по названию" << endl;
-			cout << "3. Удаление записи по порядковому номеру" << endl;
-			cout << "4. Добавление новой записи" << endl;
-			cout << "5. Выход в меню справочника" << endl;
+			cout << "Р’С‹Р±РµСЂРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјРѕРµ РґРµР№СЃС‚РІРёРµ: " << endl;
+			cout << "1. РџРѕРєР°Р·Р°С‚СЊ РІСЃРµ Р·Р°РїРёСЃРё" << endl;
+			cout << "2. РџРѕРёСЃРє Р·Р°РїРёСЃРё РїРѕ РЅР°Р·РІР°РЅРёСЋ" << endl;
+			cout << "3. РЈРґР°Р»РµРЅРёРµ Р·Р°РїРёСЃРё РїРѕ РїРѕСЂСЏРґРєРѕРІРѕРјСѓ РЅРѕРјРµСЂСѓ" << endl;
+			cout << "4. Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕР№ Р·Р°РїРёСЃРё" << endl;
+			cout << "5. Р’С‹С…РѕРґ РІ РјРµРЅСЋ СЃРїСЂР°РІРѕС‡РЅРёРєР°" << endl;
 			cin >> choice2;
 
 			get_directory(choice2);
@@ -204,7 +204,7 @@ public:
 
 
 			else if (ch2 == 2) {
-				cout << "Введите название для поиска: ";
+				cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РґР»СЏ РїРѕРёСЃРєР°: ";
 				string str;
 				cin >> str;
 				bool test = true;
@@ -214,15 +214,15 @@ public:
 						lake_obj[i].print();
 					}
 				}
-				if (test) { cout << "Такой элемент не найден!"; }
+				if (test) { cout << "РўР°РєРѕР№ СЌР»РµРјРµРЅС‚ РЅРµ РЅР°Р№РґРµРЅ!"; }
 				showMenu();
 
 			}
 			else if (ch2 == 3) {
 				int number; 
-				cout << "Введите номер для удаления элемента: ";
+				cout << "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°: ";
 				cin >> number;
-				while (number > lake_obj.size()) { cout << "Ошибка, введите корректный номер!" << endl; cin >> number; }
+				while (number > lake_obj.size()) { cout << "РћС€РёР±РєР°, РІРІРµРґРёС‚Рµ РєРѕСЂСЂРµРєС‚РЅС‹Р№ РЅРѕРјРµСЂ!" << endl; cin >> number; }
 				number--;
 				lake_obj.erase(lake_obj.begin() + number);
 				showMenu();
@@ -252,7 +252,7 @@ public:
 
 
 			else if (ch2 == 2) {
-				cout << "Введите название для поиска: ";
+				cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РґР»СЏ РїРѕРёСЃРєР°: ";
 				string str;
 				cin >> str;
 				bool test = true;
@@ -262,15 +262,15 @@ public:
 						river_obj[i].print();
 					}
 				}
-				if (test) { cout << "Такой элемент не найден!"; }
+				if (test) { cout << "РўР°РєРѕР№ СЌР»РµРјРµРЅС‚ РЅРµ РЅР°Р№РґРµРЅ!"; }
 				showMenu();
 
 			}
 			else if (ch2 == 3) {
 				int number;
-				cout << "Введите номер для удаления элемента: ";
+				cout << "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°: ";
 				cin >> number;
-				while (number > river_obj.size()) { cout << "Ошибка, введите корректный номер!" << endl; cin >> number; }
+				while (number > river_obj.size()) { cout << "РћС€РёР±РєР°, РІРІРµРґРёС‚Рµ РєРѕСЂСЂРµРєС‚РЅС‹Р№ РЅРѕРјРµСЂ!" << endl; cin >> number; }
 				number--;
 				river_obj.erase(river_obj.begin() + number);
 				showMenu();
@@ -301,7 +301,7 @@ public:
 
 
 			else if (ch2 == 2) {
-				cout << "Введите название для поиска: ";
+				cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РґР»СЏ РїРѕРёСЃРєР°: ";
 				string str;
 				cin >> str;
 				bool test = true;
@@ -311,15 +311,15 @@ public:
 						waterfall_obj[i].print();
 					}
 				}
-				if (test) { cout << "Такой элемент не найден!"; }
+				if (test) { cout << "РўР°РєРѕР№ СЌР»РµРјРµРЅС‚ РЅРµ РЅР°Р№РґРµРЅ!"; }
 				showMenu();
 
 			}
 			else if (ch2 == 3) {
 				int number;
-				cout << "Введите номер для удаления элемента: ";
+				cout << "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р°: ";
 				cin >> number;
-				while (number > waterfall_obj.size()) { cout << "Ошибка, введите корректный номер!" << endl; cin >> number; }
+				while (number > waterfall_obj.size()) { cout << "РћС€РёР±РєР°, РІРІРµРґРёС‚Рµ РєРѕСЂСЂРµРєС‚РЅС‹Р№ РЅРѕРјРµСЂ!" << endl; cin >> number; }
 				number--;
 				waterfall_obj.erase(waterfall_obj.begin() + number);
 				showMenu();
